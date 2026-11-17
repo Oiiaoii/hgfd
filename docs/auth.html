@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LuminFish sign-in</title>
+<style>body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#03050e;color:#e6ecff;font-family:system-ui,sans-serif;text-align:center}
+a{display:inline-block;margin-top:18px;padding:13px 26px;border-radius:12px;background:#2a3a82;color:#fff;text-decoration:none;font-weight:600}</style></head>
+<body><div><h2>Returning to LuminFish…</h2><p id="m">If nothing happens, tap the button.</p>
+<a id="b" href="#">Open LuminFish</a></div>
+<script>
+// Forwards the sign-in answer (code, state, error) from https to the app's own address luminfish://auth
+var target = "luminfish://auth" + location.search;
+document.getElementById("b").href = target;
+setTimeout(function () { location.replace(target); }, 150);
+</script></body></html>

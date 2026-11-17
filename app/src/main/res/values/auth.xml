@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Put your OAuth client IDs here before building (public IDs, no secrets), or type them in the app under
+         "Sign-in setup" on the sign-in screen. See SIGNIN_SETUP.md. -->
+    <string name="discord_client_id" translatable="false"></string>
+    <string name="roblox_client_id" translatable="false"></string>
+</resources>
